@@ -1,0 +1,16 @@
+begin
+set a 10
+get a
+begin
+set a 20
+set b 50
+set c 90
+commit
+begin
+set a 30
+get a
+rollback
+get a
+rollback
+get a
+end
